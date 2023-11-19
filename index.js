@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv'
 dotenv.config();
 
-import moneyRouter from './router/money.router.js';
+import notesRouter from './router/notes.router.js';
 import usersRouter from './router/users.router.js';
 
 import express from "express"; // "type": "module"
@@ -32,7 +32,7 @@ app.get("/", function (request, response) {
   response.send("🙋‍♂️, 🌏❤️💕");
 });
 
-app.use("/money", moneyRouter)
+app.use("/notes", notesRouter)
 app.use("/users", usersRouter)
 
 app.use((req, res, next) => {

@@ -13,4 +13,7 @@ export async function getUserByName(username) {
       .db("Money-Manger")
       .collection("money")
       .updateOne({ _id: new ObjectId(id) }, { $set: newPassword });
-  }
+  } 
+
+
+  
